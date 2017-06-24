@@ -5,7 +5,7 @@ ARG ARAPI_VERSION=910
 
 ENV REMEDY_LIBS_DIR="/opt/remedy" \
   PYREMDY_TARBALL=https://github.com/fgimian/pyremedy/archive/${PYREMEDY_VERSION}.tar.gz \
-  ARAPI_URL=https://rrr.se/download/arapi/api${ARAPI_VERSION}linux.tar.gz
+  ARAPI_URL=https://rrr.se/download/arapi/api${ARAPI_VERSION}linux.tar.gz \
   DEPS_RUNTIME="python python-pip curl" \
   DEPS_BUILD=""
 
