@@ -12,7 +12,7 @@ ENV REMEDY_LIBS_DIR="/opt/remedy" \
 RUN dnf -y install ${DEPS_RUNTIME} ${DEPS_BUILD} \
   && dnf -y clean all \
   && install -d ${REMEDY_LIBS_DIR} \
-  && curl -sL https://rrr.se/download/arapi/api910linux.tar.gz \
+  && curl -sL ${ARAPI_URL} \
     | tar --strip-components=1 -C ${REMEDY_LIBS_DIR} -xz \
   && echo -e '# Remedy ARS support\n\
 /opt/remedy/lib\n\
